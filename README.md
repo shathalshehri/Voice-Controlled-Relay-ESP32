@@ -54,33 +54,22 @@ Below is the wiring diagram for connecting the ESP32 to the relay module:
    - Place the `page.php` file in the root directory of your web server.
 
 2. **Access the Control Panel:**
-   - Open your web browser and navigate to the URL where `page.php` is hosted to use the speech recognition feature.
+   - Open your web browser and navigate to the URL where `page.php` is hosted to start the speech recognition.
 
-## Demo Video
+## Demo
 
-Check out the demo video for a visual walkthrough of the ESP32 relay control in action:
-
-[![Watch the demo video](https://your-image-hosting-service.com/preview-image.jpg)](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing)
-
-## Usage
-
-1. **Speech-to-Text Conversion:**
-   - Use the web interface to speak commands.
-   - Commands like "open" and "close" will be sent to the PHP server.
-
-2. **Relay Control:**
-   - The ESP32 processes the commands and controls the relay to activate or deactivate the connected device accordingly.
+Watch the demo video of the project in action by clicking [here](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing).
 
 ## How It Works
 
-- **Speech Recognition**: Utilizes the Web Speech API to convert spoken commands into text.
-- **API Communication**: The converted text is sent to the PHP server via a POST request.
-- **ESP32 Integration**: The ESP32 regularly checks for new commands from the PHP server and controls the relay based on the received commands.
+- **Speech Recognition**: The web interface uses the Web Speech API to convert spoken commands into text.
+- **API Communication**: The transcript is sent to the PHP server via a POST request.
+- **ESP32 Integration**: The ESP32 periodically fetches the latest command from the PHP server and controls the relay based on the command.
 
 ## Troubleshooting
 
-- **ESP32 Connection Issues**: Ensure that the ESP32 is connected to your WiFi network and that the server URL is correct.
-- **Speech Recognition Errors**: Confirm that your browser supports the Web Speech API and check the JavaScript console for errors.
+- **ESP32 Connection Issues**: Ensure that the ESP32 is properly connected to your WiFi network and that the server URL is correct.
+- **Speech Recognition Errors**: Verify that your browser supports Web Speech API and check for any errors in the JavaScript console.
 
 ## License
 
