@@ -70,7 +70,3 @@ Watch the demo video of the project in action by clicking [here](https://drive.g
 
 - **ESP32 Connection Issues**: Ensure that the ESP32 is properly connected to your WiFi network and that the server URL is correct.
 - **Speech Recognition Errors**: Verify that your browser supports Web Speech API and check for any errors in the JavaScript console.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
