@@ -24,15 +24,20 @@ This repository demonstrates a project using an ESP32 microcontroller to control
   
 ## Circuit Diagram
 
-Below is the diagram showing the overall setup of the project:
+Below is the wiring diagram for connecting the ESP32 to the relay module:
 
-![Project Flow Diagram](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/application.png)
+![Circuit Diagram](https://github.com/shathalshehri/Voice-Controlled-Relay-ESP32/blob/main/circuit.png)
+
 
 **Diagram Description:**
 - **A Computer with a Web Browser**: Uses Google Chrome for voice recognition.
 - **API Page**: Web page that processes voice commands and sends them as HTTP requests.
 - **ESP32**: Receives commands from the API and controls the relay and LED.
 - **Relay**: Controls the connected device based on commands from the ESP32.
+
+Below is the diagram showing the overall setup of the project:
+
+![Project Flow Diagram](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/application.png)
 
 ## Web Interface and Speech-to-Text
 
