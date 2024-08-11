@@ -1,15 +1,14 @@
-# ESP32 Relay and LED Control with Speech-to-Text
+# Voice Controlled LED and Relay ESP32
 
 ## Overview
 
-This repository provides an IoT solution for controlling a relay using an ESP32 microcontroller and speech-to-text commands. Users can control a relay connected to the ESP32 by speaking commands like "open" and "close", with the system interacting through a web API for speech recognition.
+This repository demonstrates a project using an ESP32 microcontroller to control an LED and relay based on voice commands processed through a web-based speech recognition system.
 
 ## Project Components
 
-- **ESP32 Microcontroller**: Handles control of the relay based on commands received from the web service.
-- **Speech-to-Text API**: Converts spoken commands into text, which is then sent to the ESP32.
-- **Relay Module**: Controls the relay based on commands from the ESP32, enabling or disabling connected devices.
-
+- **ESP32 Microcontroller**: Controls the LED and relay based on commands received from a web service.
+- **Speech-to-Text API**: Converts spoken commands into text and sends them to the ESP32 via an HTTP request.
+- **LED and Relay Modules**: Controlled based on the commands from the ESP32.
 ## Hardware Required
 
 - ESP32 Development Board
@@ -22,51 +21,57 @@ This repository provides an IoT solution for controlling a relay using an ESP32 
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - PHP Server for handling speech-to-text conversion
 - Web browser for the user interface
-
+  
 ## Circuit Diagram
 
-Below is the wiring diagram for connecting the ESP32 to the relay module:
+Below is the diagram showing the overall setup of the project:
 
-![Circuit Diagram](https://github.com/shathalshehri/Voice-Controlled-Relay-ESP32/blob/main/circuit.png)
+![Project Flow Diagram](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/application.png)
 
-## Setup and Configuration
+**Diagram Description:**
+- **A Computer with a Web Browser**: Uses Google Chrome for voice recognition.
+- **API Page**: Web page that processes voice commands and sends them as HTTP requests.
+- **ESP32**: Receives commands from the API and controls the relay and LED.
+- **Relay**: Controls the connected device based on commands from the ESP32.
 
-### 1. Prepare the PHP Server
+## Web Interface and Speech-to-Text
 
-1. **Create and Configure the Database:**
-   - Import the provided SQL dump to set up the `Robot` database and `speech_to_text_data` table.
+The web interface for this project allows you to use speech-to-text functionality to control the LED and relay. Here’s how it works:
 
-2. **Upload the PHP Script:**
-   - Place the `speech_to_text.php` file in the `RobotProj1` directory on your web server.
+1. **Voice Command: "Open"**
+   - **Voice Recognition Screenshot**: 
+     ![Voice Command Open](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/VoiceRecog-open.png)
+   - **API Response**: 
+     ![API Response for Open](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API-1.png)
+   - The API returns `1`, signaling the ESP32 to turn on the relay and LED.
 
-### 2. ESP32 Code
+2. **Voice Command: "Close"**
+   - **Voice Recognition Screenshot**: 
+     ![Voice Command Close](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/VoiceRecog-close.png)
+   - **API Response**: 
+     ![API Response for Close](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API0.png)
+   - The API returns `0`, signaling the ESP32 to turn off the relay and LED.
 
-1. **Download and Install the Arduino IDE:**
-   - Obtain and install the [Arduino IDE](https://www.arduino.cc/en/software).
+## Demo Video
 
-2. **Configure the ESP32 Code:**
-   - Update the WiFi credentials in `ESP32_relay_SpeechToText.ino` with your network details.
-   - Upload the code to the ESP32 using the Arduino IDE.
+Watch the demo video of the project in action:
 
-### 3. User Interface
+[Click here to view the demo video](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing)
 
-1. **Upload HTML and JavaScript:**
-   - Place the `page.php` file in the root directory of your web server.
+## How to Use
 
-2. **Access the Control Panel:**
-   - Open your web browser and navigate to the URL where `page.php` is hosted to start the speech recognition.
+1. **Set Up the PHP Server:**
+   - Create and configure the database using the provided SQL dump.
+   - Upload the PHP script to your web server.
 
-## Demo
+2. **Upload and Configure ESP32 Code:**
+   - Install the Arduino IDE.
+   - Update the ESP32 code with your WiFi credentials and upload it.
 
-Watch the demo video of the project in action by clicking [here](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing).
+3. **User Interface:**
+   - Upload the HTML and JavaScript files to your web server.
+   - Access the web interface and start using the speech recognition feature.
 
-## How It Works
+## License
 
-- **Speech Recognition**: The web interface uses the Web Speech API to convert spoken commands into text.
-- **API Communication**: The transcript is sent to the PHP server via a POST request.
-- **ESP32 Integration**: The ESP32 periodically fetches the latest command from the PHP server and controls the relay based on the command.
-
-## Troubleshooting
-
-- **ESP32 Connection Issues**: Ensure that the ESP32 is properly connected to your WiFi network and that the server URL is correct.
-- **Speech Recognition Errors**: Verify that your browser supports Web Speech API and check for any errors in the JavaScript console.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
