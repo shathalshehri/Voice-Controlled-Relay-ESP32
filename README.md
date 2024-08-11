@@ -1,4 +1,4 @@
-# ESP32 Relay Control with Speech-to-Text
+# ESP32 Relay and LED Control with Speech-to-Text
 
 ## Overview
 
