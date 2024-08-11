@@ -77,6 +77,4 @@ Watch the demo video of the project in action:
    - Upload the HTML and JavaScript files to your web server.
    - Access the web interface and start using the speech recognition feature.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
