@@ -58,9 +58,9 @@ Below is the wiring diagram for connecting the ESP32 to the relay module:
 
 ## Demo Video
 
-View the demo video showcasing the ESP32 relay control with speech-to-text:
+Check out the demo video for a visual walkthrough of the ESP32 relay control in action:
 
-[![Demo Video](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing)
+[![Watch the demo video](https://your-image-hosting-service.com/preview-image.jpg)](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing)
 
 ## Usage
 
@@ -85,4 +85,3 @@ View the demo video showcasing the ESP32 relay control with speech-to-text:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
