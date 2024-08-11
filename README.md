@@ -23,6 +23,12 @@ This repository provides an IoT solution for controlling a relay using an ESP32 
 - PHP Server for handling speech-to-text conversion
 - Web browser for the user interface
 
+## Circuit Diagram
+
+Below is the wiring diagram for connecting the ESP32 to the relay module:
+
+![Circuit Diagram](https://github.com/shathalshehri/Voice-Controlled-Relay-ESP32/blob/main/circuit.png)
+
 ## Setup and Configuration
 
 ### 1. Prepare the PHP Server
@@ -54,7 +60,7 @@ This repository provides an IoT solution for controlling a relay using an ESP32 
 
 View the demo video showcasing the ESP32 relay control with speech-to-text:
 
-[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing)
+[![Demo Video](https://drive.google.com/file/d/1UB3mt-bV5alMFO0D3y7VS1I3aJXT1VKC/view?usp=sharing)
 
 ## Usage
 
@@ -79,3 +85,4 @@ View the demo video showcasing the ESP32 relay control with speech-to-text:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
