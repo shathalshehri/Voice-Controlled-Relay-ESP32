@@ -9,6 +9,7 @@ This repository demonstrates a project using an ESP32 microcontroller to control
 - **ESP32 Microcontroller**: Controls the LED and relay based on commands received from a web service.
 - **Speech-to-Text API**: Converts spoken commands into text and sends them to the ESP32 via an HTTP request.
 - **LED and Relay Modules**: Controlled based on the commands from the ESP32.
+
 ## Hardware Required
 
 - ESP32 Development Board
@@ -43,18 +44,18 @@ Below is the diagram showing the overall setup of the project:
 
 The web interface for this project allows you to use speech-to-text functionality to control the LED and relay. Here’s how it works:
 
-1. **Voice Command: "Open"**
+1. **Voice Command: "On"**
    - **Voice Recognition Screenshot**: 
-     ![Voice Command Open](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/VoiceRecog-open.png)
+     ![Voice Command On](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/On.png)
    - **API Response**: 
-     ![API Response for Open](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API-1.png)
+     ![API Response for On](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API_1.png)
    - The API returns `1`, signaling the ESP32 to turn on the relay and LED.
 
-2. **Voice Command: "Close"**
+2. **Voice Command: "Off"**
    - **Voice Recognition Screenshot**: 
-     ![Voice Command Close](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/VoiceRecog-close.png)
+     ![Voice Command Off](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/off.png)
    - **API Response**: 
-     ![API Response for Close](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API0.png)
+     ![API Response for Off](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API0.png)
    - The API returns `0`, signaling the ESP32 to turn off the relay and LED.
 
 ## Demo Video
@@ -76,5 +77,3 @@ Watch the demo video of the project in action:
 3. **User Interface:**
    - Upload the HTML and JavaScript files to your web server.
    - Access the web interface and start using the speech recognition feature.
-
-
