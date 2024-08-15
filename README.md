@@ -58,7 +58,7 @@ The web interface for this project allows you to use speech-to-text functionalit
      ![API Response for Off](https://github.com/shathalshehri/Voice_Controlled_LED_and_Relay_ESP32/blob/main/API0.png)
    - The API returns `0`, signaling the ESP32 to turn off the relay and LED.
 
-## Demo Video
+## 🚀 **Demo Video**
 
 Watch the demo video of the project in action:
 
